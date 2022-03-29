@@ -1,13 +1,14 @@
 <!--
  * @Date: 2022-03-28 11:13:33
  * @LastEditors: 赵聪
- * @LastEditTime: 2022-03-29 23:50:44
+ * @LastEditTime: 2022-03-30 00:19:27
  * @FilePath: /leetCode/栈/README.md
 -->
 # 栈相关
 #### 1.实现一个栈，支持Api:push、pop、isEmpty、size，支持迭代，实现iterator
 
 ```typescript
+// ./stack.ts
 class stackNode<T> {
   item: null | T;
   next: null | stackNode<T>;
@@ -68,9 +69,32 @@ console.log(list.first);
 ```
 
 #### 2.利用栈检测括号是否完整
-
+[()]{}{[()()]()} -- true
+([)] -- false
 ```typescript
-
+// ./parentheses.ts
+function parentheses(str: string) {
+  const map = new Map<string, string>();
+  map.set(")", "(");
+  map.set("]", "[");
+  map.set("}", "{");
+  const strStack = new stack<string>();
+  let flag = true;
+  let index = 0;
+  while (flag && index < str.length) {
+    const s = str[index];
+    const value = map.get(s);
+    if (value) {
+      if (value !== strStack.pop()) {
+        flag = false;
+      }
+    } else {
+      strStack.push(s);
+    }
+    index++;
+  }
+  return flag && strStack.isEmpty();
+}
 ```
 
 #### 3.有一个队列 Q ，利用栈反转队列
