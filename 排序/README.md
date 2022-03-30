@@ -1,12 +1,12 @@
 <!--
  * @Date: 2022-03-29 20:11:50
  * @LastEditors: 赵聪
- * @LastEditTime: 2022-03-31 00:12:28
+ * @LastEditTime: 2022-03-31 00:15:08
  * @FilePath: /leetCode/排序/README.md
 -->
 # 冒泡
 从头开始比较，两两交换，把最大的数不断推到序列的后面
-```typesrcipt
+```typescript
 export function bubbleSort<T>(arr: T[]) {
   for (let i = arr.length - 1; i > 0; i--) {
     for (let j = 0; j < i ; j++) {
@@ -21,7 +21,7 @@ export function bubbleSort<T>(arr: T[]) {
 ```
 # 插入
 每一次插入都与之前已经插入的元素进行比较，找到插入的位置
-```typesrcipt
+```typescript
 export function insertSort<T>(arr: T[]) {
   if (arr.length === 0) return [];
   // 从第二个元素开始查
@@ -42,7 +42,7 @@ export function insertSort<T>(arr: T[]) {
 ```
 # 选择
 每次遍历时，选择一个最大的交换到序列的后面
-```typesrcipt
+```typescript
 export function selectSort<T>(arr: T[]) {
   for (let i = arr.length - 1; i > 0; i--) {
     let index = i;
