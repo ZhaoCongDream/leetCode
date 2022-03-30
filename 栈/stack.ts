@@ -1,14 +1,8 @@
 /*
- * @Date: 2022-03-29 23:56:44
- * @LastEditors: 赵聪
- * @LastEditTime: 2022-03-29 23:56:44
- * @FilePath: /leetCode/栈/stack.ts
- */
-/*
  * @Date: 2022-03-29 23:15:10
  * @LastEditors: 赵聪
- * @LastEditTime: 2022-03-29 23:56:37
- * @FilePath: /leetCode/栈/index.ts
+ * @LastEditTime: 2022-03-30 11:10:08
+ * @FilePath: /leetCode/栈/stack.ts
  */
 class stackNode<T> {
   item: null | T;

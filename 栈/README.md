@@ -1,7 +1,7 @@
 <!--
  * @Date: 2022-03-28 11:13:33
  * @LastEditors: 赵聪
- * @LastEditTime: 2022-03-30 00:19:27
+ * @LastEditTime: 2022-03-30 00:21:04
  * @FilePath: /leetCode/栈/README.md
 -->
 # 栈相关
@@ -69,10 +69,12 @@ console.log(list.first);
 ```
 
 #### 2.利用栈检测括号是否完整
-[()]{}{[()()]()} -- true
-([)] -- false
+"[()]{}{[()()]()}" -- true  
+
+"([)]" -- false
 ```typescript
 // ./parentheses.ts
+import { stack } from "./stack";
 function parentheses(str: string) {
   const map = new Map<string, string>();
   map.set(")", "(");
