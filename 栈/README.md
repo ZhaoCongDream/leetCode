@@ -1,12 +1,12 @@
 <!--
  * @Date: 2022-03-28 11:13:33
  * @LastEditors: 赵聪
- * @LastEditTime: 2022-03-30 00:21:04
+ * @LastEditTime: 2022-03-31 00:25:26
  * @FilePath: /leetCode/栈/README.md
 -->
 # 栈相关
 #### 1.实现一个栈，支持Api:push、pop、isEmpty、size，支持迭代，实现iterator
-
+[stack](./stack.ts)
 ```typescript
 // ./stack.ts
 class stackNode<T> {
@@ -67,7 +67,7 @@ console.log(list.pop())
 */
 console.log(list.first);
 ```
-
+[parentheses](./parentheses.ts)
 #### 2.利用栈检测括号是否完整
 "[()]{}{[()()]()}" -- true  
 

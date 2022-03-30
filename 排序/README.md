@@ -1,10 +1,10 @@
 <!--
  * @Date: 2022-03-29 20:11:50
  * @LastEditors: 赵聪
- * @LastEditTime: 2022-03-31 00:15:08
+ * @LastEditTime: 2022-03-31 00:23:58
  * @FilePath: /leetCode/排序/README.md
 -->
-# 冒泡
+# [冒泡](./bubbleSort.ts)
 从头开始比较，两两交换，把最大的数不断推到序列的后面
 ```typescript
 export function bubbleSort<T>(arr: T[]) {
@@ -19,7 +19,7 @@ export function bubbleSort<T>(arr: T[]) {
   return arr
 }
 ```
-# 插入
+# [插入](./insertSort.ts)
 每一次插入都与之前已经插入的元素进行比较，找到插入的位置
 ```typescript
 export function insertSort<T>(arr: T[]) {
@@ -40,7 +40,7 @@ export function insertSort<T>(arr: T[]) {
 }
 
 ```
-# 选择
+# [选择](./insertSort.ts)
 每次遍历时，选择一个最大的交换到序列的后面
 ```typescript
 export function selectSort<T>(arr: T[]) {
@@ -59,7 +59,7 @@ export function selectSort<T>(arr: T[]) {
 }
 
 ```
-# 快排
+# [快排](./quickSort.ts)
 
 分治思想：  
 1.根据一个中位数分割为left和right两个数组，left数组比中位数小，right数组比中位数大。  
@@ -75,7 +75,7 @@ function quickSort<T>(arr: T[]): T[] {
 }
 ```
 
-# 归并
+# [归并](./mergeSort.ts)
 分治思想：  
 1.根据长度分割为left和right两个数组，然后递归分割。  
 2.终止条件是每个数组小于两个元素。  
