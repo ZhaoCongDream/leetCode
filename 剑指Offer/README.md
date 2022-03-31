@@ -1,7 +1,7 @@
 <!--
  * @Date: 2022-03-31 23:38:17
  * @LastEditors: 赵聪
- * @LastEditTime: 2022-04-01 00:32:46
+ * @LastEditTime: 2022-04-01 00:43:38
  * @FilePath: /leetCode/剑指Offer/README.md
 -->
 
@@ -72,5 +72,22 @@ const CheckPermutationArrayCount = (s1: string, s2: string) => {
   const arr2 = count(s2);
   // 可以直接toString() 也可以数组遍历
   return arr1.toString() === arr2.toString();
+};
+```
+### URL化 
+URL化。编写一种方法，将字符串中的空格全部替换为%20。假定该字符串尾部有足够的空间存放新增字符，并且知道字符串的“真实”长度。
+示例1
+```typescript
+输入："Mr John Smith    ", 13
+输出："Mr%20John%20Smith"
+```
+示例2
+```typescript
+输入："Mr John Smith    ", 13
+输出："Mr%20John%20Smith"
+```
+```typescript
+var replaceSpaces = function(S, length) {
+    return S.slice(0,length).replaceAll(" ","%20")
 };
 ```
