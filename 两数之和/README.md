@@ -1,7 +1,7 @@
 <!--
  * @Date: 2022-03-28 11:13:33
  * @LastEditors: 赵聪
- * @LastEditTime: 2022-03-28 11:15:24
+ * @LastEditTime: 2022-03-31 12:50:43
  * @FilePath: /leetCode/两数之和/README.md
 -->
 # 两数之和
@@ -34,4 +34,18 @@
 进阶：你可以想出一个时间复杂度小于 O(n^2) 的算法吗？
 
 
+```
+```typescript
+const twoSum = (arr:number[],target:number)=>{
+    const map = new Map()
+    for (let index = 0; index < arr.length; index++) {
+      const value = target - arr[index]
+       if(map.has(value)){
+         return [index,map.get(value)]
+       }else{
+         map.set(arr[index],index)
+       }
+    }
+    return -1
+}
 ```
