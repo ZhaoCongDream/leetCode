@@ -1,7 +1,7 @@
 <!--
  * @Date: 2022-03-28 11:13:33
  * @LastEditors: 赵聪
- * @LastEditTime: 2022-03-29 20:04:58
+ * @LastEditTime: 2022-03-31 17:23:58
  * @FilePath: /leetCode/LRU/README.md
 -->
 # LRU
@@ -30,7 +30,7 @@ lRUCache.get(1);    // 返回 -1 (未找到)
 lRUCache.get(3);    // 返回 3
 lRUCache.get(4);    // 返回 4
 ```
-答案
+[code](./index.ts)
 ```javascript
 class lruMap {
   limit: number;
