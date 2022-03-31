@@ -1,7 +1,7 @@
 <!--
  * @Date: 2022-03-28 11:13:33
  * @LastEditors: 赵聪
- * @LastEditTime: 2022-03-31 12:50:43
+ * @LastEditTime: 2022-03-31 13:09:36
  * @FilePath: /leetCode/两数之和/README.md
 -->
 # 两数之和
@@ -35,6 +35,7 @@
 
 
 ```
+[code](./index.ts)
 ```typescript
 const twoSum = (arr:number[],target:number)=>{
     const map = new Map()
@@ -48,4 +49,24 @@ const twoSum = (arr:number[],target:number)=>{
     }
     return -1
 }
+```
+[test](./twoSum.test.ts)
+```typescript
+// All Pass
+test("twoSum [2,7,11,15],9", () => {
+  expect(twoSum([2, 7, 11, 15], 9)).toStrictEqual([0, 1]);
+});
+
+test("twoSum [3,2,4],6", () => {
+  expect(twoSum([3,2,4], 6)).toStrictEqual([1,2]);
+});
+
+test("twoSum [3,3],6", () => {
+  expect(twoSum([3,3], 6)).toStrictEqual([0, 1]);
+});
+
+test("twoSum [3,3],5", () => {
+  expect(twoSum([3,3], 5)).toBe(-1);
+});
+
 ```
