@@ -1,7 +1,7 @@
 <!--
  * @Date: 2022-03-31 23:38:17
  * @LastEditors: 赵聪
- * @LastEditTime: 2022-04-01 00:43:38
+ * @LastEditTime: 2022-04-01 10:27:49
  * @FilePath: /leetCode/剑指Offer/README.md
 -->
 
@@ -74,7 +74,7 @@ const CheckPermutationArrayCount = (s1: string, s2: string) => {
   return arr1.toString() === arr2.toString();
 };
 ```
-### URL化 
+### [URL化](./replaceSpaces.ts)
 URL化。编写一种方法，将字符串中的空格全部替换为%20。假定该字符串尾部有足够的空间存放新增字符，并且知道字符串的“真实”长度。
 示例1
 ```typescript
