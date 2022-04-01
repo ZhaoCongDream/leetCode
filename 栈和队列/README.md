@@ -1,7 +1,7 @@
 <!--
  * @Date: 2022-03-28 11:13:33
  * @LastEditors: 赵聪
- * @LastEditTime: 2022-03-31 00:27:36
+ * @LastEditTime: 2022-04-01 10:36:19
  * @FilePath: /leetCode/栈/README.md
 -->
 # 栈相关
@@ -108,6 +108,13 @@ function parentheses(str: string) {
 ```
 
 #### 4.输入一个十进制数字，转换二进制
+
+```typescript
+
+```
+
+
+#### 5.两个栈实现队列
 
 ```typescript
 

@@ -1,7 +1,7 @@
 <!--
  * @Date: 2022-03-29 20:11:50
  * @LastEditors: 赵聪
- * @LastEditTime: 2022-03-31 00:23:58
+ * @LastEditTime: 2022-04-01 10:35:10
  * @FilePath: /leetCode/排序/README.md
 -->
 # [冒泡](./bubbleSort.ts)
@@ -110,3 +110,6 @@ function mergeSort<T>(arr: T[]): T[] {
   return merge(left, right);
 }
 ```
+# [计数](./mergeSort.ts)
+# [希尔](./mergeSort.ts)
+# [堆](./mergeSort.ts)
