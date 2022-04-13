@@ -1,7 +1,7 @@
 <!--
  * @Date: 2022-03-28 11:13:33
  * @LastEditors: 赵聪
- * @LastEditTime: 2022-04-13 17:56:42
+ * @LastEditTime: 2022-04-13 17:58:32
  * @FilePath: /leetCode/树/README.md
 -->
 # 树
@@ -129,7 +129,7 @@ class Tree<T> {
 }
 
 ```
-##### [重建二叉树](./%E9%87%8D%E5%BB%BA%E4%BA%8C%E5%8F%89%E6%A0%91/reConstructorBinaryTree.ts)
+##### [重建二叉树](./%E9%87%8D%E5%BB%BA%E4%BA%8C%E5%8F%89%E6%A0%91/reConstructorBinaryTree.ts#L10)
 ##### [求二叉树的遍历](./%E9%87%8D%E5%BB%BA%E4%BA%8C%E5%8F%89%E6%A0%91/reConstructorBinaryTree.ts#L36)
 ### 二叉树的对称性
 ##### 二叉树的镜像

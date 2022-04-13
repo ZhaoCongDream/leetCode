@@ -1,7 +1,7 @@
 /*
  * @Date: 2022-04-13 15:10:35
  * @LastEditors: 赵聪
- * @LastEditTime: 2022-04-13 17:36:17
+ * @LastEditTime: 2022-04-13 17:58:22
  * @FilePath: /leetCode/树/重建二叉树/reConstructorBinaryTree.ts
  */
 
