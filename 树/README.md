@@ -1,12 +1,16 @@
 <!--
  * @Date: 2022-03-28 11:13:33
  * @LastEditors: 赵聪
- * @LastEditTime: 2022-04-01 16:49:22
+ * @LastEditTime: 2022-04-13 17:56:42
  * @FilePath: /leetCode/树/README.md
 -->
 # 树
 
 ### [基本实现](./tree.ts)
+### 二叉树遍历
+##### 中序遍历
+##### 前序遍历
+##### 后序遍历
 ```typescript
 class TreeNode<T> {
   data: T;
@@ -125,12 +129,8 @@ class Tree<T> {
 }
 
 ```
-### 二叉树遍历
-##### 中序遍历
-##### 前序遍历
-##### 后序遍历
-##### 重建二叉树
-##### 求二叉树的遍历
+##### [重建二叉树](./%E9%87%8D%E5%BB%BA%E4%BA%8C%E5%8F%89%E6%A0%91/reConstructorBinaryTree.ts)
+##### [求二叉树的遍历](./%E9%87%8D%E5%BB%BA%E4%BA%8C%E5%8F%89%E6%A0%91/reConstructorBinaryTree.ts#L36)
 ### 二叉树的对称性
 ##### 二叉树的镜像
 ##### 对称二叉树
