@@ -1,11 +1,12 @@
 <!--
  * @Date: 2022-04-01 19:18:48
  * @LastEditors: 赵聪
- * @LastEditTime: 2022-04-01 19:51:53
- * @FilePath: /leetCode/斐波那契数列/README.md
+ * @LastEditTime: 2022-04-02 17:56:40
+ * @FilePath: /leetCode/斐波那契数列和跳台阶/README.md
 -->
 
 ### 斐波那契数列，现在要求输入一个整数 n，请你输出斐波那契数列的第 n 项（从 0 开始，第 0 项为 0）。
+
 
 ```typescript
 // 这个数列从第3项开始，每一项都等于前两项之和。
@@ -49,21 +50,47 @@ export const FibonacciMemory = (n, memory:any) => {
 ```typescript
 // 递归改循环
 export const FibonacciLoop = (n) => {
+  if (n <= 1) return n;
+  let i = 1;
+   // 倒数第一项 n - 1
+  let n1 = 0;
+   // 倒数第二项 n - 2
+  let n2 = 1;
+  // 当前计算项 n = n - 2 + n - 1 
+  let sum =  n2 + n1
+  while (i++ < n) {
+    // 右移一位 [ n - 3, n - 2 ] => [ n - 2, n - 1]
+    [n2, n1] = [n1, sum];
+    // 计算右移后的结果 n = n - 2 + n - 1 
+    sum = n2 + n1;
+  }
+  return sum;
+};
+```
+
+### 青蛙跳台阶，一只青蛙一次可以跳上1级台阶，也可以跳上2级。求该青蛙跳上一个n级的台阶总共有多少种跳法（先后次序不同算不同的结果）。
+##### 青蛙跳第四个台阶的跳法 等于 青蛙跳第三个台阶的跳法 + 青蛙跳第二个台阶的跳法
+##### 青蛙跳第五个台阶的跳法 等于 青蛙跳第四个台阶的跳法 + 青蛙跳第三个台阶的跳法
+```typescript
+// 基本思路
+f(n) = f(n - 1) + f(n - 2);
+```
+```typescript
+
+export const JumpLoop = (n) => {
   if (n <= 2) return n;
-  let i = 3;
+  let i = 2;
    // 倒数第一项 n - 1
   let n1 = 1;
    // 倒数第二项 n - 2
   let n2 = 1;
   // 当前计算项 n = n - 2 + n - 1 
   let sum =  n2 + n1
-  while (i <= n) {
+  while (i++ < n) {
     // 右移一位 [ n - 3, n - 2 ] => [ n - 2, n - 1]
     [n2, n1] = [n1, sum];
     // 计算右移后的结果 n = n - 2 + n - 1 
     sum = n2 + n1;
-    // 索引增加，意味着下次循环需要右移
-    i++;
   }
   return sum;
 };

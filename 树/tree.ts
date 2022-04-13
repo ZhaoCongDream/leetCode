@@ -1,10 +1,10 @@
 /*
  * @Date: 2022-04-01 11:00:49
  * @LastEditors: 赵聪
- * @LastEditTime: 2022-04-01 16:47:04
+ * @LastEditTime: 2022-04-13 17:04:13
  * @FilePath: /leetCode/树/tree.ts
  */
-class TreeNode<T> {
+export class TreeNode<T> {
   data: T;
   left: TreeNode<T> | null;
   right: TreeNode<T> | null;
@@ -21,7 +21,7 @@ class TreeNode<T> {
     console.log(this.data);
   }
 }
-class Tree<T> {
+ export class Tree<T> {
   root: TreeNode<T> | null = null;
   insert(data: T) {
     const node = new TreeNode(data, null, null);
